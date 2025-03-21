@@ -9,5 +9,6 @@ animal.info()
 dog = Dog("Овчарка", False, "Бобик", 5, "Собака")
 dog.info()
 dog.guard_house()
+dog.guard_house()
 
 
