@@ -24,7 +24,7 @@ class Dog(Animal):
 
     def info_d(self):
         print(self.breed)
-        print(f"Защитный статус: {'Активирован' if self.guard_status else 'Деактивирован'}")
+        print(self.guard_status)
         print(self.name)
         print(self.age)
         print(self.species) 
@@ -32,9 +32,8 @@ class Dog(Animal):
 
 
     def guard_house(self):
-        if self.guard_status:
-            self.guard_status = False
+
+        if self.guard_status == False:
             print("защита деактивирована")
         else:
-            self.guard_status = True
             print("защита активирована")
